@@ -1,0 +1,21 @@
+// Language used is C
+
+#include <stdio.h>
+
+int main() {
+    char name[50];
+    int age;
+
+    // Get Name of the user
+    printf("Enter your name: ");
+    scanf("%s", name);
+
+    // Get age of the user
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    // Print greeting with age
+    printf("Heyy , %s! You are %d years old.\n", name, age);
+
+    return 0;
+}
