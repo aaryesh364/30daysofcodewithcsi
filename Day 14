@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int count_occurrences(int nums[], int n, int target) {
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (nums[i] == target) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    int nums[] = {3, 7, 2, 5, 9, 7, 1, 7};
+    int n = sizeof(nums) / sizeof(nums[0]);
+    int target = 7; // Target element to count occurrences
+
+    int occurrences = count_occurrences(nums, n, target);
+
+    printf("The number of occurrences of %d in the array is: %d\n", target, occurrences);
+
+    return 0;
+}
